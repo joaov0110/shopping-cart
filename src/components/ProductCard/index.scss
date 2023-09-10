@@ -1,0 +1,74 @@
+.product {
+  &__card {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__name,
+  &__price {
+    color: #636262;
+  }
+
+  &__name {
+    font-size: 16px;
+    @media screen and (min-width: 968px) {
+      font-size: 22px;
+    }
+  }
+
+  &__price {
+    font-size: 32px;
+  }
+
+  &__image-container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 150px;
+      max-height: 150px;
+      object-fit: cover;
+    }
+  }
+
+  &__total-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 10px;
+
+    &__decrement,
+    &__increment {
+      border: none;
+      background-color: #1e72d3;
+      color: #fff;
+    }
+
+    &__total {
+      font-weight: 700;
+      color: 636262;
+    }
+  }
+
+  &__warning {
+    color: #d81a69;
+    padding: 10px 0;
+  }
+
+  &__add {
+    button {
+      background-color: #1e72d3;
+      text-transform: uppercase;
+      color: #fff;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  }
+}
